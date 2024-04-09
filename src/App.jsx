@@ -1,19 +1,22 @@
 import {
   Section,
   Container,
-  BlogCard,
   Heading,
   Statistics,
   CryptoHistory,
   ForbesList,
 } from 'components';
 
+import BlogCard from 'components/BlogCard/BlogCard';
+
+import article from './data/article.json';
+
 export const App = () => {
   return (
     <Section>
       <Container>
         <Heading title="Task 1 Blog Card" bottom />
-        <BlogCard />
+        <BlogCard article={article} />
 
         <Heading title="Task 2 Statistics" top bottom />
         <Statistics title="Main Statistics" />
