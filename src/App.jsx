@@ -3,14 +3,15 @@ import {
   Container,
   Heading,
   CryptoHistory,
-  ForbesList,
 } from 'components';
 
 import BlogCard from 'components/BlogCard/BlogCard';
-import Statistics from 'components/Statistics/Statistics'
+import Statistics from 'components/Statistics/Statistics';
+import ForbesList from 'components/ForbesList/ForbesList';
 
 import article from './data/article.json';
 import stats from './data/stats.json';
+import list from './data/forbes.json';
 
 export const App = () => {
   return (
@@ -23,7 +24,7 @@ export const App = () => {
         <Statistics title="Main Statistics" stats={stats} />
 
         <Heading title="Task 3 Forbes list" top bottom />
-        <ForbesList />
+        <ForbesList list={list} />
 
         <Heading title="Task 4 Crypto history" top bottom />
         <CryptoHistory />
